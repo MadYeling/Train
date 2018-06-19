@@ -13,7 +13,7 @@ public class Task03Test {
         if (!str.contains(key)) {
             return count;
         }
-        int index = 0;
+        int index;
         while ((index = str.indexOf(key)) != -1) {
             str = str.substring(index + key.length());
             count++;
