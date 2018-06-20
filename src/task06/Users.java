@@ -3,11 +3,10 @@ package task06;
 import java.util.Date;
 
 public class Users {
-    private String name, password, email;
+    private String name, password, email,phoneNumber;
     private Date birthday;
-    private int phoneNumber;
 
-    public Users(String name, String password, String email, Date birthday, int phoneNumber) {
+    public Users(String name, String password, String email, Date birthday, String phoneNumber) {
         this.name = name;
         this.password = password;
         this.email = email;
@@ -47,13 +46,40 @@ public class Users {
         this.birthday = birthday;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public int hashCode(){      //why?
+        return name.hashCode();
+    }
 
+    @Override
+    public boolean equals(Object obj){    //why?
+        if (obj == null) {
+            return false;
+        }
+
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+
+        if (this == obj) {
+            return true;
+        }
+
+        Users others = (Users) obj;
+
+        if (name == null) {
+            return others.name == null;
+        } else {
+            return name.equals(others.name);
+        }
+
+    }
 }
