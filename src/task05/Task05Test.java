@@ -3,6 +3,7 @@ package task05;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class Task05Test {
     private static ArrayList<String> musicList = new ArrayList<>();
 
@@ -39,7 +40,6 @@ public class Task05Test {
             }
         }
     }
-
 
     private static void Initialization(ArrayList<String> list) {
         list.add("βίος");
