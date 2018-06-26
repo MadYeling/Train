@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Scanner;
 
+//任务6-2模拟注册新浪微博用户
 public class Task06Test {
     private static HashSet<Users> hs = new HashSet<>();
 
@@ -116,7 +117,11 @@ public class Task06Test {
                 }
             }
 
-            if (year < 1 || year > 2018) {
+
+            DateFormat df = new SimpleDateFormat("yyyy");
+            int thisYear = Integer.parseInt(df.format(new Date()));
+
+            if (year < 1 || year > thisYear) {
                 result.append("年份错误！\r\n");
                 state = false;
             }

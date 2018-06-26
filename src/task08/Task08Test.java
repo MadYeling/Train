@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+//任务7-1保存书店每日交易记录程序设计
 public class Task08Test {
     private static ArrayList<Books> bookList = new ArrayList<>();
 

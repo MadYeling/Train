@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+//任务7-2模拟记事本
 @SuppressWarnings("InfiniteLoopStatement")
 public class Task09Test {
     private static String msg = "";
@@ -134,7 +135,7 @@ public class Task09Test {
             } else {
                 System.out.println("输入文件保存路径");
                 filePath = sc.nextLine();
-                if (filePath.toLowerCase().endsWith(".txt")) {
+                if (!filePath.toLowerCase().endsWith(".txt")) {
                     filePath += ".txt";
                 }
                 fw = new FileWriter(filePath);

@@ -1,5 +1,6 @@
 package task02;
 
+//任务4-2模拟物流快递系统程序
 public class Task02Test {
     public static void main(String[] args) {
         SendTask st = new SendTask("HYX600235", 76.32);

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+//任务6-3斗地主小游戏之洗牌发牌
 public class Task07Test {
     public static void main(String[] args) {
         ArrayList<String> suit = new ArrayList<>();

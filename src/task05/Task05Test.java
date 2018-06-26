@@ -3,6 +3,7 @@ package task05;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//任务6-1模拟KTV点歌系统
 @SuppressWarnings("InfiniteLoopStatement")
 public class Task05Test {
     private static ArrayList<String> musicList = new ArrayList<>();
